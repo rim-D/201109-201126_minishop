@@ -19,6 +19,7 @@
 - 로그아웃하면 session에 담긴 login정보는 invalidate처리됨
 
 ## 2. 장바구니
+![장바구니](https://user-images.githubusercontent.com/48913713/101371840-9221e980-38ee-11eb-8844-56e16b0653d6.gif)
 - 선택한 상품의 필수정보를 담아야지만 장바구니에 상품 정보등록
 
 ## 3. 주문하기
