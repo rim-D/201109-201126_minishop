@@ -1,0 +1,663 @@
+@charset "UTF-8";
+input[type="checkbox"], input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url(../images/icon_chk_radio.png) no-repeat 0 0;
+}
+
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+    background: url(../images/icon_chk_radio.png) no-repeat -20px 0;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+    cursor: pointer;
+    padding: 12px;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+input[type="button"], input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+input[type="reset"], input[type="button"].reset {
+    background-color: #999;
+    color: #fff;
+    border: none;
+}
+
+.won:after {
+    content: '원';
+    display: inline-block;
+}
+
+
+/* 메인 --- main --- HEADER */
+.login_nav {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #000;
+}
+
+.login_nav li a {
+    display: block;
+    padding: 10px 10px;
+}
+
+.login_nav li a:last-child {
+    padding-right: 0;
+}
+
+.login_nav li a strong {
+    font-weight: bold;
+    color: #ea5f30;
+}
+
+.gcategory {
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid #000;
+}
+
+.gcategory li a {
+    display: block;
+    padding: 20px 15px;
+}
+
+
+/* 로그인 폼 --- LOGIN FORM */
+.login_form {
+    text-align: center;
+    padding: 120px 0;
+}
+
+.login {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 50px;
+    text-align: left;
+}
+
+.loginfrom_box {
+    margin-bottom: 20px;
+}
+
+.loginfrom_box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.loginfrom_box input[type="text"],
+.loginfrom_box input[type="password"] {
+    border: 1px solid #999;
+    padding: 12px;
+}
+
+
+/* 회원가입 --- memberForm */
+.member {
+    padding: 120px 0;
+}
+
+.memberform_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.memberform_box select {
+    color: #666;
+    height: 40px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: url(../images/select_arrw.png) no-repeat right 50%;
+    border: 1px solid #ccc;
+}
+
+.input_box_100 {
+    width: 100%;
+}
+
+.input_box_49 {
+    width: 49%;
+}
+
+.input_box {
+    width: 132px;
+}
+
+.memberform_box select.email_select {
+    width: 150px;
+}
+
+.result {
+    display: block;
+    margin-top: 5px;
+}
+
+.memberform {
+    width: 550px;
+    border: 1px solid #000;
+    padding: 50px;
+}
+
+.member_box {
+    margin-bottom: 20px;
+}
+
+.member_box:last-child {
+    margin-bottom: 0;
+}
+
+.member_box label {
+    display: block;
+}
+
+.member_box label.text-point {
+    font-weight: bold;
+}
+
+.member_box input {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 6px;
+}
+
+.post_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post_box input {
+    width: 60%;
+    margin-right: 5px;
+}
+
+.member_btn {
+    width: 40%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.hyphen {
+    margin: 0 5px;
+    display: inline-block;
+    color: #222;
+}
+
+.btn_box {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* 마이페이지 --- mypage */
+.mypage_from {
+    position: relative;
+    border: 1px solid #000;
+    padding: 40px;
+    margin-top: 20px;
+    background-color: #fbfbfb;
+}
+
+.mypage_from h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.mypage_from h3:before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 26px;
+    background-color: #000;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.input_box {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.input_box label {
+    width: 70px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.input_box input, .input_box select {
+    display: inline-block;
+    border: 1px solid #bcbcbc;
+    padding: 5px;
+}
+
+.input_s {
+    width: 120px;
+}
+
+.input_l {
+    width: 240px;
+}
+
+.update_btn_box {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    margin-top: 20px;
+}
+
+
+/* 상품리스트 --- goodsList*/
+.goods_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.goods_list li {
+}
+
+.goods_list li {
+    width: calc(100 / 4);
+}
+
+.goods_img {
+    border: 1px solid #f8f8f8;
+    margin-top: 50px;
+}
+
+.goods_list li img {
+    width: calc(100 / 4);
+}
+
+.goods_list li span {
+    display: block;
+}
+
+.goods_detail_box {
+    padding: 10px 0 50px;
+}
+
+.goods_name:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin: 10px 0;
+}
+
+.goods_name em {
+    max-width: 250px;
+    display: block;
+    color: #777777;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.goods_price {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.goods_price:after {
+    content: '원';
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+
+/* 상세페이지 --- goodsRetrieve */
+.product {
+    margin-top: 20px;
+}
+
+.product_cover {
+    width: 50%;
+    height: 540px;
+}
+
+.product_cover img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.product_description {
+    width: 50%;
+    height: 540px;
+    box-sizing: border-box;
+    padding-left: 10%;
+    position: relative;
+}
+
+.product_description::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.product_info dl {
+    margin: 10px 0;
+}
+
+.product_info dl .red {
+    color: red;
+}
+
+.product_info dl dt {
+    width: 95px;
+    margin-right: 38px;
+}
+.gPrice::after,
+.gPrice_sale::after {
+    content: '원';
+    display: inline-block;
+}
+.product_info select {
+    width: 50%;
+    padding: 4px;
+    display: block;
+}
+
+.order-btn {
+    display: flex;
+}
+
+.order-btn input.number {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.order-btn button {
+    padding: 0 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 2px;
+    border: none;
+    margin-right: 5px;
+}
+
+.btn-area {
+    width: 80%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.buy-btn {
+    background-color: #333;
+}
+
+.cart-btn {
+    background-color: #999;
+}
+
+
+/* 장바구니 --- cartList */
+.cart h2 {
+    font-size: 24px;
+    padding: 46px 0 24px;
+}
+
+.cartlist {
+    text-align: center;
+    width: 100%;
+}
+
+.cartlist thead th {
+    border-top: 3px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 15px 0;
+}
+
+.cartlist tbody td {
+    border-bottom: 1px solid #000;
+    padding: 5px 0;
+}
+
+.goods_cover {
+    width: 25%;
+    float: left;
+}
+
+.cartlist_img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.goods_info {
+    position: relative;
+}
+
+.goods_info_box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.goods_description {
+    display: inline-block;
+    width: 75%;
+    text-align: left;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.goods_title {
+    display: inline-block;
+}
+
+.goods_title em {
+    display: block;
+}
+
+.product_button_box {
+    padding: 15px 0;
+}
+
+.product_button_box button {
+    margin-right: 10px;
+}
+
+
+/* 주문확인 --- orderConfirm */
+.orderCon h2 {
+    font-size: 24px;
+    padding: 46px 0 24px;
+}
+
+.orderConfirm {
+    text-align: center;
+    width: 100%;
+}
+
+.orderConfirm thead th {
+    border-top: 3px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 15px 0;
+}
+
+.orderConfirm tbody td {
+    padding: 15px 0;
+    border-bottom: 1px solid #000;
+    height: 80px;
+    line-height: 80px;
+}
+
+.cartlist_img {
+    width: 80px;
+}
+
+.gname_title {
+    display: block;
+}
+
+.cartAmount_box input {
+    text-align: center;
+}
+
+/* 주문확인 내역 */
+.customer_info_wrap {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 50px;
+}
+
+.customer_info_wrap::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 30px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.customer_info dl {
+    margin: 10px 0;
+}
+
+.customer_info dt {
+    width: 95px;
+    margin-right: 38px;
+    padding: 5px 4px;
+}
+
+.customer_info dl dd input {
+    width: 240px;
+    border: 1px solid #999;
+    padding: 5px 4px;
+}
+
+.delivery_info_wrap {
+    margin-top: 30px;
+}
+
+.delivery_info_wrap::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 30px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.delivery_btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.payment_wrap {
+    margin-bottom: 50px;
+}
+
+.payment {
+    margin-top: 30px;
+}
+
+.payment-btn_box {
+    text-align: center;
+}
+
+.payment-btn {
+    width: 240px;
+    color: #fff;
+    background-color: #000;
+    padding: 12px 0;
+    margin: 30px 0;
+}
+
+.reset-btn {
+    background-color: #333;
+}
+
+/* 주문완료 --- orderDone */
+.order_done {
+    margin: 120px;
+}
+
+.order_done .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.order_done_box {
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.order_done_box span {
+    font-size: 24px;
+    display: block;
+    font-weight: normal;
+}
+
+.order_done_box span strong {
+    color: #ff532d;
+}
+
+.cartlist_back {
+    display: block;
+    background-color: #000;
+    padding: 12px 10px;
+    margin-top: 15px;
+    color: #fff;
+    text-align: center;
+
+}
+
+

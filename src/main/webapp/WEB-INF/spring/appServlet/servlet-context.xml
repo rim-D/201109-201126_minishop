@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+	<mvc:annotation-driven/>
+	<mvc:default-servlet-handler/>
+	<!-- <mvc:view-controller path="/" view-name="main"/> --><!-- /인 경우 뷰페이지 main.jsp -->
+	<mvc:view-controller path="/memberForm" view-name="memberForm"/><!-- memberForm.jsp -->
+	<mvc:view-controller path="/loginForm" view-name="loginForm"/><!-- loginForm.jsp -->
+	<mvc:view-controller path="/mypage" view-name="mypage"/><!-- mypage.jsp -->
+	<mvc:view-controller path="/cartList" view-name="cartList"/><!-- mypage.jsp -->
+	<mvc:view-controller path="/orderConfirm" view-name="orderConfirm"/><!-- orderConfirm.jsp -->
+	<mvc:view-controller path="/orderDone" view-name="orderDone"/><!-- orderDone.jsp -->
+
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+	
+	
+	
+	<!-- 인터셉터 등록 시작 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/loginCheck/**"/><!-- /loginCheck/**일 때 인터셉터로 로그인 처리  -->
+			<ref bean="loginCheckInterceptor"/><!-- /loginCheck하위 주소 모두 동작 -->
+		</mvc:interceptor>
+	</mvc:interceptors>
+	<bean id="loginCheckInterceptor" class="com.interceptor.LoginCheckInterceptor"/>
+	<!-- 인터셉터 등록 끝 -->
+	
+	
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<!-- com.밑에 검색하게끔 설정 -->
+	<context:component-scan base-package="com.*"/>
+	
+
+	
+	
+	
+</beans>

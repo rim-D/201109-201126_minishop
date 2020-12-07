@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear:both;
+}
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+.button, .btn {
+    cursor: pointer;
+}
+.float-left{
+    float: left;
+}
+.float-right {
+    float: right;
+}
