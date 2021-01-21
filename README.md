@@ -3,8 +3,7 @@
 프로젝트 참여율 100% 개인 프로젝트로 진행하였습니다.
 
 # 포트폴리오 다운 받기
-[201109_201126_minishop_SpringProject.pdf]
-(https://github.com/rim-D/minishop/files/5851110/201109_201126_minishop_SpringProject.pdf)<br>
+<a href="https://github.com/rim-D/minishop/files/5851110/201109_201126_minishop_SpringProject.pdf">👆201109_201126_minishop_SpringProjec PDF 다운👆</a><br>
 
 # 기술스택
 ### 1. Front-End
