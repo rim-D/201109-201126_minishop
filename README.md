@@ -8,10 +8,10 @@
 
 # 기술스택
 ### 1. Front-End
-`HTML5` `CSS3` `JavaScript` `Jquery`
+`HTML5` `CSS3` `JavaScript` `Jquery(Ajax)`
 
 ### 2. Back-End
-`OracleDB` `AWS(RDS)` `MyBatis` `Spring`
+`OracleDB` `AWS(RDS)` `MyBatis` `Spring` `TomcatServer8.5` `JDK1.8`
 
 ### 3. Management Tools
 `Git`
