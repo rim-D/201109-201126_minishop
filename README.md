@@ -4,6 +4,7 @@
 
 # 포트폴리오 다운 받기
 <a href="https://github.com/rim-D/minishop/files/5851110/201109_201126_minishop_SpringProject.pdf">👆201109_201126_minishop_SpringProjec PDF 다운👆</a><br>
+![image](https://user-images.githubusercontent.com/48913713/105390183-17255000-5c5c-11eb-84a3-12fb129d6184.png)
 
 # 기술스택
 ### 1. Front-End
