@@ -3,7 +3,7 @@
 프로젝트 참여율 100% 개인 프로젝트로 진행하였습니다.
 
 # 포트폴리오 다운 받기
-<a href="https://github.com/rim-D/201109-201126_minishop/files/5851808/201109_201126_minishop_SpringProject.pdf">👆201109_201126_minishop_SpringProjec PDF 다운👆</a><br>
+<a href="https://github.com/rim-D/201109-201126_minishop/files/5851808/201109_201126_minishop_SpringProject.pdf">👆minishop Project PDF 다운👆</a><br>
 ![image](https://user-images.githubusercontent.com/48913713/105390183-17255000-5c5c-11eb-84a3-12fb129d6184.png)
 
 # 기술스택
